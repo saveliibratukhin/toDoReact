@@ -1,0 +1,46 @@
+$mobileScreen: 767px  
+
+.container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-content: center
+
+    .buttonContainer
+        margin: 3px
+        display: flex
+        flex-direction: row
+        width: 100%
+        justify-content: center
+    
+    button
+        color: #fff
+        background: linear-gradient(to top, rgba(93, 12, 255, 1) 0%,rgba(155, 0, 250, 1) 50%)
+        border: 1px solid blue
+        border-radius: 10px
+        padding-top: 1px
+        padding-bottom: 1px
+        @media (max-width: $mobileScreen) 
+            //height: 25px
+
+    .closeButton
+        position: absolute
+        top: 10%
+        right: 10%
+
+    input
+        background-color: #fff
+        background-image: linear-gradient(to top, #dadaf8, #fff 50%)
+        border: 1.2px solid blue
+        border-radius: 0.25em
+        margin-top: 5px
+
+.toDoForm
+    display: flex
+    flex-direction: row
+    justify-content: center    
+    @media (max-width: $mobileScreen) 
+        flex-direction: column
+    *
+        margin: 3px
+
