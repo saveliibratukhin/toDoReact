@@ -3,7 +3,7 @@ import { ITask } from "../ITaskInterface"
 
 class Todo {
     todos: ITask[] = [
-        {id: 1, title: 'To do toDo app', description: 'tododododo', complete: false},
+        {id: 1, title: 'To do toDo app', complete: false},
         {id: 2, title: 'To do toDo app', complete: false},
         {id: 3, title: 'To do toDo app', complete: false},
         {id: 4, title: 'To do toDo app', complete: false}
