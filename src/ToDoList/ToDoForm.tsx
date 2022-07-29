@@ -16,8 +16,12 @@ const ToDoForm = ({setIsOpen}: ToDoFormProps) => {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        todo.addTodo(userInput)
-        setIsOpen(false)
+        if (userInput) {
+            todo.addTodo(userInput)
+            setIsOpen(false)
+        }
+        else
+            alert('Enter data')
     }
 
     return (
